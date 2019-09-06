@@ -1,46 +1,35 @@
-# Code Review Developer Guide
+# Guia de Code Review para o desenvolvedor
 
-## Introduction {#intro}
+## Introdução {#intro}
 
-A code review is a process where someone other than the author(s) of a piece of
-code examines that code.
+O _code review_ é o processo em que alguém, que não o próprio autor do código, o examina.
 
-At Google we use code review to maintain the quality of our code and products.
+No Google, o code review é usado para mantermos a qualidade do nosso código e dos nossos produtos.
 
-This documentation is the canonical description of Google's code review
-processes and policies.
+Essa documentação é a descrição canônica dos processos e políticas de code review no Google.
 
+Essa página dá uma visão geral do nosso processo de code review. Há outros dois grandes documentos que fazem parte desse guia:
 
+-   **[Como realizar um code review](reviewer/)**: Um guia detalhadao para quem vai fazer a revisão.
+-   **[O guia do autor de uma CL](developer/)**: Um guia detalhado para os desenvolvedores que mandam suas CLs para revisão.
 
-This page is an overview of our code review process. There are two other large
-documents that are a part of this guide:
+## O que revisores de código avaliam? {#look_for}
 
--   **[How To Do A Code Review](reviewer/)**: A detailed guide for code
-    reviewers.
--   **[The CL Author's Guide](developer/)**: A detailed guide for developers
-    whose CLs are going through review.
+Quem fará o code review deve se atentar em:
 
-## What Do Code Reviewers Look For? {#look_for}
+-   **Design**: O código foi bem arquitetado e é apropriado para o seu sistema?
+-   **Funcionalidade**: O código se comporta da maneira que o autor pretendia? A maneira que o código se comporta é boa para os usuários?
+-   **Complexidade**: O código poderia ser mais simples? Outro desenvolvedor 
+    conseguiria entender e dar manutenção facilmente nesse código no futuro?
+-   **Testes**: O código tem testes automatizados completos e que dão uma cobertura?
+-   **Nomenclatura**: O desenvolvedor utilizou nomes claros e diretos para variáveis, classes, métodos, etc?
+-   **Comentários**: Os comentários são claros e úteis?
+-   **Estilo de código**: O código segue nossos [padrões de código](http://google.github.io/styleguide/)?
+-   **Documentação**: O desenvolvedor atualizou as documentações necessárias?
 
-Code reviews should look at:
+Veja **[Como fazer o code review](reviewer/)** para mais informações.
 
--   **Design**: Is the code well-designed and appropriate for your system?
--   **Functionality**: Does the code behave as the author likely intended? Is
-    the way the code behaves good for its users?
--   **Complexity**: Could the code be made simpler? Would another developer be
-    able to easily understand and use this code when they come across it in the
-    future?
--   **Tests**: Does the code have correct and well-designed automated tests?
--   **Naming**: Did the developer choose clear names for variables, classes,
-    methods, etc.?
--   **Comments**: Are the comments clear and useful?
--   **Style**: Does the code follow our
-    [style guides](http://google.github.io/styleguide/)?
--   **Documentation**: Did the developer also update relevant documentation?
-
-See **[How To Do A Code Review](reviewer/)** for more information.
-
-### Picking the Best Reviewers {#best_reviewers}
+### Selecionando os melhores revisores {#best_reviewers}
 
 In general, you want to find the *best* reviewers you can who are capable of
 responding to your review within a reasonable period of time.
