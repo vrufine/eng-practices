@@ -31,28 +31,23 @@ Veja **[Como fazer o code review](reviewer/)** para mais informações.
 
 ### Selecionando os melhores revisores {#best_reviewers}
 
-In general, you want to find the *best* reviewers you can who are capable of
-responding to your review within a reasonable period of time.
+Em geral, você deve escolher os *melhores* revisores e que possam realizar o _code review_ dentro de um tempo razoável.
 
-The best reviewer is the person who will be able to give you the most thorough
-and correct review for the piece of code you are writing. This usually means the
-owner(s) of the code, who may or may not be the people in the OWNERS file.
-Sometimes this means asking different people to review different parts of the
-CL.
+O melhor revisor é a pessoa que conseguirá fazer uma revisão bem detalhada e correta para o determinado código que você escreveu.
 
-If you find an ideal reviewer but they are not available, you should at least CC
-them on your change.
+Normalmente será o autor (ou autores) do código, que pode, ou não, estar no arquivo "OWNERS".
 
-### In-Person Reviews {#in_person}
+Pode ser que às vezes seja necessário pedir para que pessoas diferentes revisem partes diferentes do CL.
 
-If you pair-programmed a piece of code with somebody who was qualified to do a
-good code review on it, then that code is considered reviewed.
+Se você encontrar o revisor "ideal" mas não estiver disponível para fazer a revisão, você deve marcar a pessoa no seu CL.
 
-You can also do in-person code reviews where the reviewer asks questions and the
-developer of the change speaks only when spoken to.
+### Revisões ao vivo {#in_person}
 
-## See Also {#seealso}
+Se você fez um _pair-programming_ com uma pessoa que seria qualificada pra fazer um bom _code review_ desse código, então esse trecho de código pode ser considerado revisado.
 
--   [How To Do A Code Review](reviewer/): A detailed guide for code reviewers.
--   [The CL Author's Guide](developer/): A detailed guide for developers whose
-    CLs are going through review.
+Você também pode realizar um review ao vivo em que o revisor faz perguntas e o autor das alterações fala somente quando questionado.
+
+## Veja também {#seealso}
+
+-   [Como fazer um code review](reviewer/): Um guia detalhadao para quem vai fazer a revisão.
+-   [O guia do autor de uma CL](developer/): Um guia detalhado para os desenvolvedores que mandam suas CLs para revisão.
